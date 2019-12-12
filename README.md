@@ -24,36 +24,36 @@ Example:
 
 ***
 
-#####Example Maven Commands : 
+###Example Maven Commands : 
 
 ***
 
-######For running regression set :
+####For running regression set :
 mvn test -Dcucumber.options="--tags @Regression" 
 
 ***
 
-######For running a tag with other :
+####For running a tag with other :
 mvn test -Dcucumber.options="--tags @FirstTag and --tags @SecondTag" 
 
 ***
 
-######For running a tag or another :
+####For running a tag or another :
 mvn test -Dcucumber.options="--tags @FirstTag,@SecondTag" 
 
 ***
 
-######For running Regression tests on Desktop-Chrome :
+####For running Regression tests on Desktop-Chrome :
 mvn test -Dendpoint=desktop -Dbrowser=chrome -Dcucumber.options="--tags @Regression" 
 
 ***
 
-######For running Smoke tests on Mobile-Firefox :
+####For running Smoke tests on Mobile-Firefox :
 mvn test -Dendpoint=mobile -Dbrowser=Firefox -Dcucumber.options="--tags @Smoke" 
 
 ***
 
-#######For running SauceLabs and Browserstack:
+####For running SauceLabs and Browserstack:
 All the parameters found in Config.properties can be send as maven command OR
 Set the frequently used configuration in the config.properties file and run maven command as
 
@@ -61,7 +61,7 @@ Set the frequently used configuration in the config.properties file and run mave
 
 ***
 
-########For parallel runs on different endpoints:
+####For parallel runs on different endpoints:
 Use the Makefile to configure the parallel runs and can be run through IDE OR
 terminal using the below command
 
