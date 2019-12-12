@@ -19,52 +19,52 @@ endpoint = "desktop" || "mobile" || "tablet" || "saucelabs" || "browserstack"
 Browser size is set according to the Platform chosen and the values are taken from Config.properties
 
 Example:
--Dbrowser=firefox 
--Dendpoint=tablet 
+_-Dbrowser=firefox 
+-Dendpoint=tablet_ 
 
 ***
 
-###Example Maven Commands : 
+**Example Maven Commands:**
 
 ***
 
-####For running regression set :
-mvn test -Dcucumber.options="--tags @Regression" 
+**For running regression set:**
+_mvn test -Dcucumber.options="--tags @Regression"_
 
 ***
 
-####For running a tag with other :
-mvn test -Dcucumber.options="--tags @FirstTag and --tags @SecondTag" 
+**For running a tag with other:**
+_mvn test -Dcucumber.options="--tags @FirstTag and --tags @SecondTag"_
 
 ***
 
-####For running a tag or another :
-mvn test -Dcucumber.options="--tags @FirstTag,@SecondTag" 
+**For running a tag or another:**
+_mvn test -Dcucumber.options="--tags @FirstTag,@SecondTag"_
 
 ***
 
-####For running Regression tests on Desktop-Chrome :
-mvn test -Dendpoint=desktop -Dbrowser=chrome -Dcucumber.options="--tags @Regression" 
+**For running Regression tests on Desktop-Chrome:**
+_mvn test -Dendpoint=desktop -Dbrowser=chrome -Dcucumber.options="--tags @Regression"_ 
 
 ***
 
-####For running Smoke tests on Mobile-Firefox :
-mvn test -Dendpoint=mobile -Dbrowser=Firefox -Dcucumber.options="--tags @Smoke" 
+**For running Smoke tests on Mobile-Firefox:**
+_mvn test -Dendpoint=mobile -Dbrowser=Firefox -Dcucumber.options="--tags @Smoke"_
 
 ***
 
-####For running SauceLabs and Browserstack:
+**For running SauceLabs and Browserstack:**
 All the parameters found in Config.properties can be send as maven command OR
 Set the frequently used configuration in the config.properties file and run maven command as
 
--Dendpoint=browserstack
+_-Dendpoint=browserstack_
 
 ***
 
-####For parallel runs on different endpoints:
+**For parallel runs on different endpoints:**
 Use the Makefile to configure the parallel runs and can be run through IDE OR
 terminal using the below command
 
-make clean_it set_end_point
+_make clean_it set_end_point_
 
 ***
