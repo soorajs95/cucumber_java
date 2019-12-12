@@ -1,7 +1,7 @@
 # Selenium Java framework for UI automation testing
 
 ## cucumber-java-junit
-This project is created as a Mediamonks automation-team skeleton project for web
+This project is created as a sample automation project for web
 
 ***
 
